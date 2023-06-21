@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="profile">
+        <a href="https://www.google.com" target="_parent">
+          <img src="./assets/avatar.jpeg" alt="Foto de Perfil" />
+        </a>
+        <p>Felipe Ângelo</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <div id="links">
+        <ul id="lista_links">
+          <li>
+            <a href="mailto:felipe_angelo@live.com" target="_blank">
+              <button>Enviar um e-mail</button>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/felipe-angelo" target="_blank">
+              <button>Git-hub</button>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/felipeangelosantos/" target="_blank">
+              <button>LinkedIn</button>
+            </a>
+          </li>
+          <li>
+            <a href="https://lattes.cnpq.br/8947091711063475" target="_blank">
+              <button>Plataforma Lattes</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="social_icons">
+        <a title="Python" href="https://www.python.org/" target="_blank"><ion-icon name="logo-python"></ion-icon></a>
+        <a title="Figma" href="https://www.figma.com/" target="_blank"><ion-icon name="logo-figma"></ion-icon></a>
+        <a title="JavaScript(EcmaScript)" href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank">
+          <ion-icon name="logo-javascript"></ion-icon>
+        </a>
+        <a title="React" href="https://react.dev/" target="_blank"><ion-icon name="logo-react"></ion-icon></a>
+        <a title="Docker" href="https://www.docker.com/" target="_blank"><ion-icon name="logo-docker"></ion-icon></a>
+        <a title="Ionicons" href="https://ionic.io/ionicons" target="_blank"><ion-icon name="logo-ionic"></ion-icon></a>
+      </div>
+
+      <footer>Por Felipe Ângelo. Junho de 2023.</footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
