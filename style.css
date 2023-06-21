@@ -27,11 +27,6 @@
 }
 
 body {
-  /*background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;*/
-
   background: var(--bg-url) no-repeat top center/cover;
 }
 
@@ -94,7 +89,7 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   left: initial;
   right: 0;
 }
@@ -153,6 +148,8 @@ button:hover {
   transition: all 0.2s;
 }
 
+/* Social Icons */
+
 #social_icons {
   display: flex;
   justify-content: space-evenly;
@@ -176,6 +173,8 @@ button:hover {
   transition: background 0.5s;
   border-radius: 50%;
 }
+
+/* Rodapé */
 
 footer {
   padding: 24px 0;
