@@ -13,6 +13,7 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --social-icon-stroke: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --highlight-color: rgba(0, 0, 0, 0.2);
 }
 
 .light {
@@ -24,10 +25,12 @@
   --surface-color-hover: rgba(0, 0, 0, 0.05);
   --social-icon-stroke: rgba(0, 0, 0, 0.2);
   --switch-bg-url: url(./assets/sun.svg);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -36,7 +39,10 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
+  min-width: 360px;
+
   margin: 56px auto 0px;
   padding: 24px;
 }
@@ -87,11 +93,16 @@ body * {
   right: initial;
   top: 50%;
   transform: translateY(-50%);
+
+  animation: slide-back 0.5s;
 }
 
 .light #switch button {
-  left: initial;
-  right: 0;
+  animation: slide-in 0.5s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -180,4 +191,33 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* Meida QUeries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
